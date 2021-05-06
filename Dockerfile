@@ -116,9 +116,6 @@ EXPOSE 443 31443
 EXPOSE 3306 30306
 EXPOSE 9000 9000
 
-# Update the default apache site with the config we created.
-# ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
-
 RUN apt autoclean
 RUN apt --purge autoremove
 
